@@ -1,0 +1,22 @@
+h1
+{
+    font-family: Arial;
+    font-size: 50px;
+    color: #cdcdcd;
+    background: #232323;
+    margin-right: 350px;
+    margin-left: 350px;
+}
+
+p
+{
+    font-family: Arial;
+}
+
+footer
+{
+    background: #cdcdcd;
+    font-size: 30px;
+    margin-right: 450px;
+    margin-left: 450px;
+}

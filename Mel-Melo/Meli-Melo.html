@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      background-image: url('ExempleKAHN.png');
+    }
+    </style>
+    <meta charset="UTF-8">
+    <h1 style="text-align:center">Meli-Melo je veux me défenestrer</h1>
+    <link rel="stylesheet" href="t.css"/>
+
+</head>
+<body>
+  <audio controls>
+    <source src="Zenryoku_Zenkai_Zenkaiger.mp3">
+  </audio>
+
+<div style="text-align:center">
+    <img id="myImg" src="./img/exRobot1.jpg" width="255" height="255" onclick="myFunction()">
+</div>
+<div style="text-align:center">
+  <img id="myImg2" src="./img/FexRobot1.jpg" width="255" height="255" onclick="myFunction2()">
+</div>
+<div style="text-align:center">
+  <img id="myImg3" src="./img/GexRobot1.jpg" width="255" height="255" onclick="myFunction3()">
+</div>
+
+
+<script>
+    var indexHead = 0;
+var nbHead = 6;
+var indexMiddleHead = 0;
+var nMiddlebHead = 6;
+var indexBottom = 0;
+var nbBottom = 6;
+
+function myFunction() {
+  indexHead++;
+  if(indexHead >= nbHead) {
+       indexHead = 0;
+ }
+  document.getElementById("myImg").src = "./img/exRobot" + (indexHead+1) + ".jpg";
+}
+
+function myFunction2() {
+  indexMiddleHead++;
+  if(indexMiddleHead >= nMiddlebHead) {
+    indexMiddleHead = 0;
+ }
+  document.getElementById("myImg2").src = "./img/FexRobot" + (indexMiddleHead+1) + ".jpg";
+}
+
+function myFunction3() {
+  indexBottom++;
+  if(indexBottom >= nbBottom) {
+       indexBottom = 0;
+ }
+  document.getElementById("myImg3").src = "./img/GexRobot" + (indexBottom+1) + ".jpg";
+}
+</script>
+
+<footer style="text-align:center"><p>Ce site est fait dans la souffrance absolue.</p></footer>
+</body>
+</html>
